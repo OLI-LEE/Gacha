@@ -1,6 +1,6 @@
 # Gacha  
 # 抽卡遊戲
-A simple card-collecting game themed around the regions of Taiwan, developed using HTML, CSS, and JavaScript.  
+
 這是一個基於 HTML、CSS 和 JavaScript 實現的簡單抽卡遊戲，模擬了隨機抽取卡片的機制。  
 透過基於 JavaScript 的邏輯，提供了單抽與五連抽的功能，並結合了卡片蒐集進度追蹤，方便查看不同區域與稀有度卡片的蒐集情況。
 
