@@ -45,7 +45,7 @@ h1 {
 
 /* 預設響應式圖片樣式 */
 .responsive-img {
-    max-width: 50%; /* 圖片最大寬度為容器的60% */
+    max-width: 80%; /* 圖片最大寬度為容器的80% */
     height: auto; /* 高度自動調整，保持圖片比例 */
     display: block; /* 顯示為塊級元素 */
     margin: 0 auto; /* 確保圖片居中 */
@@ -88,24 +88,29 @@ h1 {
 /* Flexbox 容器 */
 .container {
     display: flex; /* 使用 Flexbox 排版 */
-    justify-content: center; /* 讓容器內的內容居中 */
-    gap: 5px; /* 表格之間的間距 */
+    justify-content: space-between; /* 讓容器內的內容分散對齊 */
     align-items: flex-start; /* 垂直對齊到上方 */
-    flex-wrap: wrap; /* 在小螢幕上表格會自動換行 */
+    max-width: 60%; /* 容器最大寬度為 80% */
+    margin: 0 auto; /* 水平居中 */
 }
 
-.left, .right {
-    width: 35%; /* 左右表格各佔 35% 寬度 */
+/* 左邊圖片 */
+.left {
+    width: 50%; /* 左邊佔寬度 */
+}
+
+/* 右邊表格 */
+.right {
+    width: 50%; /* 右邊佔寬度 */
 }
 
 /* 表格樣式 */
 table {
-    max-width: 70%; /* 表格最大寬度為容器的70% */
-    margin: 0 auto; /* 表格在容器內居中 */
+    max-width: 100%; /* 表格最大寬度為容器的100% */
+    margin: 10px auto; /* 表格在容器內居中 */
     width: 100%; /* 表格填滿父容器 */
     border-collapse: collapse; /* 合併邊框 */
 }
-
 /* 表頭和單元格樣式 */
 th, td {
     padding: 10px; /* 單元格內部間距 */
