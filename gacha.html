@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣集集樂</title>
+    
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="header" style="text-align:center;">
+         <b>台灣集集樂</b><br>
+        <img src="image/1.jpg" class="responsive-img">
+    </div>
+
+<div class="container">
+    <div class="left">
+        <table class="tb1">
+            <tr>
+                <th>累計抽卡張數</th>
+                <td><em id="count">0</em> 張</td>
+            </tr>
+            <tr>
+                <th>抽卡次數</th>
+                <td><span id="count1">0</span> 次</td>
+            </tr>
+        </table>
+
+        <table class="tb2">
+            <thead>
+            <tr>
+            <th colspan="4">各類卡片累積數</th>
+            </tr>
+            </thead>
+                <tr>
+                    <td>SSR 東部</td>
+                    <td>SR 南部</td>
+                    <td>R 中部</td>
+                    <td>N 北部</td>
+                </tr>
+            <tr>
+
+                <td><em id="countssr">0</em></td>
+                <td><em id="countsr">0</em></td>
+                <td><em id="countr">0</em></td>
+                <td><em id="countn">0</em></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="right">
+        <table class="tb2">
+            <thead>
+                <tr>
+                    <th>區域</th>
+                    <th>總款式數</th>
+                    <th>已收集數</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>N 北區</td>
+                    <td>6</td>
+                    <td id="nCollected">0</td>
+                </tr>
+                <tr>
+                    <td>R 中區</td>
+                    <td>5</td>
+                    <td id="rCollected">0</td>
+                </tr>
+                <tr>
+                    <td>SR 南區</td>
+                    <td>3</td>
+                    <td id="srCollected">0</td>
+                </tr>
+                <tr>
+                    <td>SSR 東區</td>
+                    <td>3</td>
+                    <td id="ssrCollected">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+    <div style="text-align:center;">
+     <h1 id="balance">目前金額: 150</h1>
+     <button onclick="one()">單抽</button>
+     <button onclick="five()">五連抽</button>
+     <button onclick="deposit()">儲值</button>
+    </div>
+
+    <h1>此次抽卡結果如下</h1>
+    <div class="box">
+        <p id="demo"></p>
+    </div>
+
+    <h1>抽卡歷史紀錄如下(請點擊排序所有卡片)</h1>
+    <div style="text-align:center;">
+        <button onclick="sortImages()">排序所有卡片</button>
+    </div>
+    <div class="box2">
+        <p id="demo2"></p>
+    </div>
+
+    <audio id="audio" src=""></audio>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="gacha.js"></script>
+    
+    <!-- 彈出恭喜訊息的容器 -->
+    <div id="congratsMsg" class="congrats-popup">恭喜！你抽到 SSR東區 卡片！</div>
+
+</body>
+</html>
